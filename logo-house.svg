@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#73F6FF"/><stop offset="1" stop-color="#00FFD1"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 70 L64 28 L112 70" fill="none" stroke="url(#g3)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34" y="66" width="60" height="40" rx="6" fill="none" stroke="url(#g3)" stroke-width="8"/>
+  <text x="50%" y="60%" text-anchor="middle" fill="#E8F1F8" font-size="18" font-family="Inter" font-weight="800">HOUSE</text>
+</svg>
