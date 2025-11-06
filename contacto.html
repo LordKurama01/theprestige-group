@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prestige Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="logo-spark"></span>
+      <span class="brand-text">The Prestige Group</span>
+    </a>
+    <input id="nav-toggle" type="checkbox" />
+    <label class="burger" for="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="ecosistema.html">Ecosistema</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a class="btn" href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero container">
+  <h1>Contacto</h1>
+  <p>Elegí el canal que prefieras. Respondemos rápido.</p>
+</section>
+
+<section class="container grid-2">
+  <div class="card">
+    <h3>Escribinos por WhatsApp</h3>
+    <p>Atención comercial y soporte.</p>
+    <a class="btn" target="_blank" rel="noopener" href="https://wa.me/5490000000000?text=Hola%20Prestige%20Group%2C%20quiero%20informaci%C3%B3n">
+      Abrir WhatsApp
+    </a>
+    <small class="muted">Reemplazá el número en <code>wa.me/5490000000000</code> por el tuyo.</small>
+  </div>
+  <div class="card">
+    <h3>Formulario (Netlify Forms)</h3>
+    <form name="contacto" method="POST" data-netlify="true" class="contact-form">
+      <input type="hidden" name="form-name" value="contacto" />
+      <label>Nombre
+        <input required type="text" name="nombre" placeholder="Tu nombre" />
+      </label>
+      <label>Email
+        <input required type="email" name="email" placeholder="tu@email.com" />
+      </label>
+      <label>Mensaje
+        <textarea required name="mensaje" rows="5" placeholder="Contanos tu idea"></textarea>
+      </label>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+    <small class="muted">Netlify guardará los envíos en la pestaña <b>Forms</b> del proyecto.</small>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Sobre Prestige</h4>
+      <p>Innovación y ejecución en Gaming, Sports, Real Estate y HSE.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul class="list-clean">
+        <li><a href="https://wa.me/5490000000000?text=Hola%20Prestige%20Group%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:hola@theprestige-group.com">hola@theprestige-group.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Redes</h4>
+      <ul class="list-clean">
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container fineprint">
+    © <span id="y"></span> The Prestige Group — Todos los derechos reservados
+  </div>
+</footer>
+
+</body>
+</html>
