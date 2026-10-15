@@ -43,3 +43,14 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - **Producción/infraestructura:** no se modificó web, app, API, despliegue ni servicios; sin costos.
 - **Rollback:** revertir commit del flyer nuevo y esta entrada, conservando pieza previa e historial.
 - **Próxima acción:** convertir SVG verificado a PNG 1080 × 1920 y revisar visualmente antes de distribuir.
+
+
+## 2026-10-15 - Flyer Perfil360data con interfaz real y firma oficial (diseño Canva en revisión)
+- Objetivo: usar captura real de Home de Perfil360data aportada por el titular (búsqueda DNI/CUIL/CUIT, Mis perfiles y Monitor360) en flyer comercial vertical para WhatsApp y evitar cualquier recreación falsa del logo corporativo.
+- Verificación de marca: `LordKurama01/Financia360/src/config/brand.ts`, `src/components/PrestigeFooter.tsx`, `src/features/app-branding/PrestigeBrandLink.tsx`, `src/features/app-branding/PrestigeLockup.tsx` y reglas de `src/app/globals.css`. Fuente corporativa sans-serif heredada, firma sencilla, diamante de `public/brand/prestige/tpg-diamondgold.png`. Logo original canónico, blob Git `049cec9ba22709ac8f261b3750ee6b3e6725f7af`.
+- Archivo agregado: `branding/tpg-signature-on-dark-official.svg` (430 × 72, transparente), que incorpora sin cambio el PNG original en base64 más `The Prestige Group` en Arial/Helvetica sans-serif. Commit `ea5856bb4e12546ed124b8042c286984d07b7721`.
+- Diseño en Canva: `DAHYFohzox0`, adaptación vertical de la captura real facilitada; se insertó en borrador la firma mediante el asset de Canva `MAHYFozwTU0`, en pie inferior derecho y se anonimizó un nombre particular visible en consultas recientes con el texto “PERFIL DE EJEMPLO”.
+- Validación: Canva importó correctamente el SVG 430 × 72, devolvió asset y previsualización de diseño con cambios. No se afirma que la edición haya sido guardada: requiere previsualización y aprobación explícita para confirmar transacción. Versión visible en diseño original 941 × 1672; no exportada como PNG final.
+- Estado, riesgos: borrador de edición pendiente de aprobación del titular. Evitar publicar capturas de datos de terceros; no se modificaron código, servicios, producción, APK ni backend.
+- Rollback: eliminar/revertir sólo la firma SVG derivada si fuese necesario; no alterar el PNG canónico ni la aplicación.
+- Próxima acción exacta: presentar preview del flyer, recibir aprobación o corrección, confirmar cambios de Canva y luego exportar a PNG para WhatsApp.
