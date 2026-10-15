@@ -31,3 +31,15 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - Riesgos y uso: la maquetación conceptual del teléfono no es una captura; se aclara disponibilidad variable de fuentes. Si se distribuye por WhatsApp como archivo raster, exportar SVG a PNG desde una herramienta gráfica, conservando marcas y relación de aspecto.
 - Rollback: revertir el commit de incorporación del archivo y el commit de bitácora, sin tocar recursos de marca ni las páginas existentes.
 - Siguiente acción exacta: inspeccionar exportación visual final en móvil y producir una variante PNG 1080 × 1350, si se dispone de flujo de exportación compatible.
+
+
+## 2026-10-15 - Corrección de marca en flyer WhatsApp (sin recrear diamante)
+
+- **Objetivo:** corregir la pieza de Perfil360data rechazada por uso de diamante generado y tipografía ornamental, conservando enfoque comercial y posicionando la firma en el extremo inferior derecho del flyer, por instrucción expresa del titular.
+- **Estado verificado:** repo Prestige `main`, HEAD previo `0887f4e94004f1519ef5901f9347dbdeac6bea3f`; verificados `AGENTS.md`, `MARCA_THE_PRESTIGE_GROUP.md`, `BITACORA.md`. En Avanza se leyó `src/config/brand.ts`, `src/features/app-branding/PrestigeBrandLink.tsx`, `src/components/PrestigeFooter.tsx` y CSS `src/app/globals.css`. El footer real usa PNG `/branding/tpg-diamondgold.png` o el original ampliado `/brand/prestige/tpg-diamondgold.png`, texto plano `The Prestige Group`, tipografía heredada sans-serif, sin título ornamental ni separadores.
+- **Cambio:** nuevo `marketing/perfil360data-whatsapp-1080x1920-footer-oficial.svg`; flyer 9:16 (1080 × 1920), identidad Perfil360data, consulta ID/CUIT/CUIL, cheques rechazados, análisis financiero, informes PDF, monitoreo y CTA demo. Diamante PNG canónico exacto incrustado en base64 (blob `049cec9ba22709ac8f261b3750ee6b3e6725f7af`) alineado a la izquierda del nombre de empresa, con firma completa anclada abajo a la derecha de la pieza. Ícono app original (blob `8e621d1415faad26fa79c78fd302a76ecaed5952`).
+- **Validaciones:** GitHub confirma creación del SVG, commit `d80bbd02c4a80681798fc663be93c07dc108aaac`. Canva importó el SVG como asset con render exitoso, dimensiones 1080 × 1920; asset `MAHYFYTkR4E`. Validación estática de proporciones, imagen incrustada, posición derecha y fuente sans-serif aprobada. No se ha producido un PNG exportado y revisado; no anunciar final PNG lista para WhatsApp sin ese paso.
+- **Riesgos/limitaciones:** el teléfono es una representación conceptual, no captura verificada de la app. El flyer corrige sello oficial de marca en origen vectorial, pero la distribución por WhatsApp debería ser PNG/JPG tras exportación raster y revisión visual a escala móvil.
+- **Producción/infraestructura:** no se modificó web, app, API, despliegue ni servicios; sin costos.
+- **Rollback:** revertir commit del flyer nuevo y esta entrada, conservando pieza previa e historial.
+- **Próxima acción:** convertir SVG verificado a PNG 1080 × 1920 y revisar visualmente antes de distribuir.
