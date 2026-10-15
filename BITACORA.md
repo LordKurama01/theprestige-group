@@ -65,3 +65,20 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - Alcance y pruebas: sólo pieza comercial Canva; no cambios en web, app, APK, backend, servicios o producción. Sin build ni deploy. La exportación PNG final para distribución WhatsApp no se realizó en esta validación.
 - Riesgos: diseño de pantalla construido a partir de captura de interfaz real, con composición ilustrada; no se anuncian datos ficticios como evidencia real. Confirmar exportación legible 9:16 antes de distribuir.
 - Próxima acción exacta: exportar Canva a PNG en calidad suficiente para WhatsApp y revisar texto/footer final antes de enviar a clientes.
+
+
+## 2026-10-15 — Portfolio GitHub y sistema de README profesionales
+
+- **Objetivo:** mejorar la primera impresion del perfil de GitHub y documentar el ecosistema de The Prestige Group sin exponer codigo propietario ni tocar aplicaciones operativas.
+- **Diagnostico verificado:** `theprestige-group` publico, rama `main`, HEAD inicial `48494b1d50aa52bb23892a7d5600e81c3467c5d0`; README anterior centrado en referencia de marca. El repositorio especial `LordKurama01/LordKurama01` no existe y la conexion GitHub disponible no ofrece crear repositorios ni cambiar pins del perfil.
+- **Fuente de identidad:** `branding/tpg-diamondgold.png` segun `MARCA_THE_PRESTIGE_GROUP.md`. Se reutiliza el archivo original por ruta, no un emoji, logo inventado ni imagen generada.
+- **Archivos creados:** `docs/GITHUB_PROFILE_README.md` (presentacion del perfil lista para copiar al repositorio especial), `docs/README_PRODUCTO_TEMPLATE.md` (estandar reutilizable).
+- **Archivos modificados:** `README.md` institucional (proyectos, valor y links publicos) y `AGENTS.md` (reglas de portfolio, marca y seguridad). Sin cambios en `index.html`, CSS, JS, assets ni recursos productivos.
+- **Commits documentales:** `86f0a7cf5a2e59d78b72018e07ff70fc8acb1658` (perfil); `a89be17fdcbbb7ef647bf1a9049ba121c3a5d04a` (plantilla); `7de607e622a0b6ae1f1e70d7bd2acd45ce73bf92` (README institucional). El commit de `AGENTS.md` y el de esta entrada estan disponibles en el historial de la rama.
+- **Otros repositorios intervenidos bajo solicitud expresa:** `LordKurama01/informe360` (`main`, HEAD inicial `a155ef741a082e80ffb1472b2de4b24e12a272d8`), `LordKurama01/custodia360` (`main`, HEAD inicial `10f31122297a97ba6c8096d6199b23d79c29608c`). Ambos recibieron README profesional, AGENTS y BITACORA. Los detalles estan en sus bitacoras.
+- **Validacion:** lectura previa de `AGENTS.md`, `BITACORA.md`, guia de marca, listado de archivos, HEAD y README; cotejo de tecnologia con `package.json` en repos publicos. Verificar posteriormente existencia y contenido remoto de los documentos nuevos. Sin tests de app, CI, build ni despliegues ejecutados; cambio exclusivamente documental.
+- **Estado y limitaciones:** portfolio institucional publicado en repo existente; README personal preparado pero **aun no activado en la cabecera del perfil** porque falta crear repositorio publico `LordKurama01/LordKurama01` y copiar alli el archivo como `README.md`. No se cambiaron pins del perfil.
+- **Riesgos:** los hosts pueden disparar pipelines con commits documentales segun su configuracion; no se garantiza un despliegue. Material publico sin capturas de datos de terceros ni secretos nuevos. Algunos documentos historicos de productos requieren auditoria separada de seguridad.
+- **Rollback:** revertir exclusivamente commits documentales de esta intervencion, conservando historial anterior y PNG original. No forzar ramas ni reescribir historia.
+- **Pendientes:** crear repo especial publico del perfil y transferir el README; elegir manualmente repositorios fijados; validar de forma visual el resultado en el perfil publico.
+- **Siguiente accion exacta:** crear `LordKurama01/LordKurama01` publico, copiar `docs/GITHUB_PROFILE_README.md` a `README.md`, confirmar que GitHub lo muestra en `github.com/LordKurama01` y fijar The Prestige Group, Informe360 y Custodia360.
