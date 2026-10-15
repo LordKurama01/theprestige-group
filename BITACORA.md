@@ -19,3 +19,15 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - Estado de esta entrega: guía y PNG guardados en la rama principal, disponibles para reutilizar. La comprobación de cierre contrasta la guía, el árbol y el HEAD remotos antes de informar el resultado al titular.
 - Pendientes: no se solicitó modificar el diseño de las páginas existentes.
 - Próxima acción exacta: para el siguiente footer o documento, leer MARCA_THE_PRESTIGE_GROUP.md, reutilizar el PNG y registrar la aplicación en la bitácora del proyecto de destino.
+
+
+## 2026-10-15 - Flyer comercial Perfil360data con footer corporativo real
+
+- Objetivo: producir flyer vertical 1080 × 1350 para difusión comercial de consultas de identidad/datos fiscales, cheques y antecedentes, PDF y monitoreo en Perfil360data.
+- Verificación previa: lectura de AGENTS.md, BITACORA.md y MARCA_THE_PRESTIGE_GROUP.md del repo Prestige, rama main HEAD inicial 18c01b9e570382d89ac6a6e156364b4f9677fdb3; lectura de AGENTS.md, README.md y assets del repo móvil Perfil360. La versión de la app en README/app.json puede ser anterior a releases externos: no se afirma release nuevo.
+- Fuente de marca: PNG completo `branding/tpg-diamondgold.png`, blob original Git `049cec9ba22709ac8f261b3750ee6b3e6725f7af`, integrado sin alterar su base64 en el SVG; firma inferior izquierda horizontal con “The Prestige Group”. Ícono oficial móvil `LordKurama01/Perfil360/assets/brand/perfil360-app-icon.png`, blob `8e621d1415faad26fa79c78fd302a76ecaed5952`.
+- Archivo nuevo: `marketing/perfil360data-flyer-consultas-2026-10-15.svg`. Un único SVG vectorial, autosuficiente, con PNGs oficiales incrustados; tipografía SVG y maqueta conceptual no representan captura verificada de producto. CTA de solicitud de demo sin precio ni URL no verificados.
+- Validaciones: generación de archivo confirmada por GitHub (commit `4ea363f15e56839130ca7ee7e058b73b450d1cb7`, main); huellas de blobs y dimensiones previstas verificadas con datos del repositorio. Sin pruebas visuales de renderización remota ni exportación rasterizada; sin cambios en código, infraestructura, APK o producción.
+- Riesgos y uso: la maquetación conceptual del teléfono no es una captura; se aclara disponibilidad variable de fuentes. Si se distribuye por WhatsApp como archivo raster, exportar SVG a PNG desde una herramienta gráfica, conservando marcas y relación de aspecto.
+- Rollback: revertir el commit de incorporación del archivo y el commit de bitácora, sin tocar recursos de marca ni las páginas existentes.
+- Siguiente acción exacta: inspeccionar exportación visual final en móvil y producir una variante PNG 1080 × 1350, si se dispone de flujo de exportación compatible.
