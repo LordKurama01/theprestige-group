@@ -54,3 +54,14 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - Estado, riesgos: borrador de edición pendiente de aprobación del titular. Evitar publicar capturas de datos de terceros; no se modificaron código, servicios, producción, APK ni backend.
 - Rollback: eliminar/revertir sólo la firma SVG derivada si fuese necesario; no alterar el PNG canónico ni la aplicación.
 - Próxima acción exacta: presentar preview del flyer, recibir aprobación o corrección, confirmar cambios de Canva y luego exportar a PNG para WhatsApp.
+
+
+## 2026-10-15 - CTA comercial definitivo del flyer Perfil360data
+
+- Objetivo: presentar Perfil360data como producto funcional; retirar cualquier invitación a demo del flyer de WhatsApp previamente aprobado.
+- Estado previo: diseño Canva `DAHYFohzox0` en transacción `613008615574967801`, con firma Prestige basada en PNG canónico y fondo con pantalla real aportada por usuario; consulta personal en pantalla ya anonimizada.
+- Cambio exacto: reemplazar “Solicitá una demo” por “Consultá ahora” en el CTA. Se conservan el resto de la composición aprobada, la firma con diamante verdadero abajo a la derecha y el texto “PERFIL DE EJEMPLO” en consultas recientes.
+- Resultado comprobado: Canva confirmó transacción `committed`; revisión posterior de contenidos: `Consultá ahora` presente, `demo` ausente, `PERFIL DE EJEMPLO` presente. Enlace de edición permanente `https://www.canva.com/design/DAHYFohzox0` y enlace corto al diseño `https://www.canva.com/d/vUMAYYvKiVARwuZ`.
+- Alcance y pruebas: sólo pieza comercial Canva; no cambios en web, app, APK, backend, servicios o producción. Sin build ni deploy. La exportación PNG final para distribución WhatsApp no se realizó en esta validación.
+- Riesgos: diseño de pantalla construido a partir de captura de interfaz real, con composición ilustrada; no se anuncian datos ficticios como evidencia real. Confirmar exportación legible 9:16 antes de distribuir.
+- Próxima acción exacta: exportar Canva a PNG en calidad suficiente para WhatsApp y revisar texto/footer final antes de enviar a clientes.
