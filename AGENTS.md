@@ -24,3 +24,13 @@ Para una tarea sólo documental, revisar los enlaces y los archivos guardados; n
 ## Registro
 
 Actualizar `BITACORA.md` en cada intervención relevante, conservando su historial. Incluir fecha, objetivo, diagnóstico, cambios, archivos, pruebas y resultados, rama/HEAD/commits o PR, riesgos, pendientes y próxima acción exacta. Nunca registrar secretos.
+
+## Portfolio y README publicos
+
+El `README.md` institucional describe el ecosistema y no sustituye las fichas tecnicas de cada repositorio.
+
+- El README listo para el perfil personal se mantiene en `docs/GITHUB_PROFILE_README.md`. GitHub solo lo muestra automaticamente en el perfil cuando existe un repositorio publico especial `LordKurama01/LordKurama01` con ese contenido como `README.md`; no afirmar que ya esta visible si ese repo no fue creado.
+- Mantener `docs/README_PRODUCTO_TEMPLATE.md` como estandar documental para productos nuevos.
+- No publicar enlaces privados como si fueran publicos, precios historicos como si siguieran vigentes, pruebas no ejecutadas, credenciales o afirmaciones de despliegue sin evidencia.
+- En README y portfolio reutilizar `branding/tpg-diamondgold.png` real, sin sustituirlo por emoji ni iconos.
+- Si se actualiza una presentacion de producto en otro repo, verificar instrucciones y bitacora de ese destino antes de modificarlo; no alterar codigo como efecto lateral de una tarea documental.
