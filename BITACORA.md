@@ -99,6 +99,6 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - Rama: `feat/prestige-operations-qa-20261021`, base `main` `02bf1c0`; main y producción intactos.
 - Se agregaron `operations/index.html`, `styles.css`, `app.mjs`, `model.mjs`, `model.test.mjs`, `README.md` y `docs/OPERACIONES_PRESTIGE_PLAN.md`.
 - Funciona como organizador local de contactos, oportunidades, seguimientos y tareas, con búsqueda, filtros e importación/exportación. Datos sólo en `localStorage`, sin login ni integración Zoho real: NO USAR con datos confidenciales.
-- Pruebas: 5 tests Node aprobados, `node --check` aprobado; código remoto JS validado sintácticamente. QA visual automatizada bloqueada por `ERR_BLOCKED_BY_ADMINISTRATOR`. No hay deploy.
+- Pruebas: 6 tests Node aprobados, `node --check` aprobado; código remoto JS validado sintácticamente. QA visual automatizada bloqueada por `ERR_BLOCKED_BY_ADMINISTRATOR`. No hay deploy.
 - Riesgo: sitio actual de Netlify no coincide con el `main` del repositorio; verificar fuente antes de publicar.
 - Próximo paso: verificar despliegue real, asegurar autenticación y base independiente, QA de navegador y después OAuth de Zoho.
