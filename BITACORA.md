@@ -105,3 +105,16 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - **Estado:** PDF generado, no enviado; revisión/aprobación del titular pendiente antes de remitir a ARBA. El conector Gmail disponible corresponde a la cuenta personal y no demuestra permisos de envío desde Zoho.
 - **Riesgos:** la copia pequeña del símbolo no se debe ampliar; confirmar remitente corporativo, dirección y destinatario antes de envío; no confundir producto en desarrollo con caso implantado.
 - **Próximo paso exacto:** revisión del PDF, sustitución del símbolo por el PNG canónico si fuera posible y envío desde Zoho a `gustavo.ponce@arba.gov.ar` junto con una respuesta breve. Registrar fecha/hora del envío cuando esté verificado.
+
+
+## 2026-10-22 — Refinamiento institucional: firma discreta y A4 vertical real
+
+- **Objetivo:** corregir presentación institucional en PDF según feedback: la firma corporativa aparecía excesivamente en todas las páginas.
+- **Estado previo:** presentación de 7 páginas existente, con footer de diamante y nombre en todas; el PDF previo se anunciaba como A4, pero su caja tenía 506,4 x 715,68 pt, inferior al tamaño A4 real.
+- **Decisión y cambio:** conservar diamante + “The Prestige Group” abajo a la derecha exclusivamente en portada y cierre; suprimir esa firma en páginas interiores 2 a 6 y conservar numeración discreta. Reubicar folio de página 4 a la izquierda para uniformidad; no alterar encabezados, textos, colores, gráficos ni orden de páginas.
+- **Archivo generado:** `The_Prestige_Group_Institucional_A4_Premium_Firma_Discreta.pdf` en artefactos de conversación; **no se ha subido el binario PDF al repositorio**.
+- **Pruebas y resultados:** 7 páginas, PDF ISO A4 vertical 595,276 x 841,89 puntos, renderizadas todas a PNG e inspección visual de mosaico y pies. Archivo final ~2,75 MB, sin cambios operativos o deploy. Se conserva sólo una firma en portada y otra en contacto.
+- **Marca:** la mejora reutiliza las imágenes del documento previamente aprobado; no modifica ni suplanta el PNG oficial del repositorio. Las imágenes interiores renderizadas conservan su contenido y tipografía visual, no texto PDF editable.
+- **Rama y registro:** main; bitácora actualizada con cambio documental reversible. Sin modificaciones a software, servicios, secretos o producción.
+- **Pendientes:** confirmar conformidad final del titular antes de remitir al organismo. El PDF no fue enviado por correo.
+- **Próximo paso exacto:** adjuntar el PDF institucional aprobado a mensaje corporativo desde Zoho a Gustavo Ponce de ARBA y verificar constancia real de envío.
