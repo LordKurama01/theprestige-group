@@ -102,3 +102,13 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - Pruebas: 6 tests Node aprobados, `node --check` aprobado; código remoto JS validado sintácticamente. QA visual automatizada bloqueada por `ERR_BLOCKED_BY_ADMINISTRATOR`. No hay deploy.
 - Riesgo: sitio actual de Netlify no coincide con el `main` del repositorio; verificar fuente antes de publicar.
 - Próximo paso: verificar despliegue real, asegurar autenticación y base independiente, QA de navegador y después OAuth de Zoho.
+
+
+## 2026-10-21 — Migración institucional Netlify → Render (sin despliegue)
+
+- El titular instruyó migrar el hosting de la web institucional a Render usando GitHub. Se respetó continuidad del sitio público.
+- Verificado: sitio productivo «Construimos estructuras digitales» difiere de `main/index.html` («Construimos el ecosistema Prestige»). Se verificaron referencias ausentes `assets/css/style.css` y `assets/js/main.js`; publicar main directamente sería regresión.
+- Workspace Render disponible: `The Prestige Group`. El servicio Render exige confirmación del workspace antes de consultar/modificar servicios; todavía no se ha seleccionado ni creado ninguno.
+- Documento agregado: `docs/MIGRACION_NETLIFY_RENDER_2026-10-21.md` en QA, con rescate de fuente Netlify, migración Git, Render staging, QA, DNS conservando Zoho y rollback.
+- Netlify, GitHub main, GoDaddy, correo Zoho y producción permanecen intactos. No se realizó baja, DNS, servicio nuevo ni promoción de código.
+- Próximo paso: confirmación de workspace Render por el usuario y recuperación del código real publicado antes de migrar.
