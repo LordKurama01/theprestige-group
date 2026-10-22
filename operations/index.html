@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1524">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+  <title>Centro de operaciones · The Prestige Group</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+<div class="app-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><img src="../branding/tpg-diamondgold.png" alt="" width="39" height="39"><div><strong>The Prestige Group</strong><small>OPERACIONES</small></div></div>
+    <div class="side-label">ESPACIO DE TRABAJO</div>
+    <nav class="navigation" aria-label="Navegación del panel">
+      <button class="navitem active" type="button" data-view="overview"><span>◫</span> Resumen</button>
+      <button class="navitem" type="button" data-view="followups"><span>✉</span> Seguimientos</button>
+      <button class="navitem" type="button" data-view="contacts"><span>♧</span> Contactos</button>
+      <button class="navitem" type="button" data-view="deals"><span>◇</span> Oportunidades</button>
+      <button class="navitem" type="button" data-view="tasks"><span>☑</span> Tareas</button>
+    </nav>
+    <div class="side-label top-gap">SISTEMA</div>
+    <nav class="navigation" aria-label="Configuración">
+      <button class="navitem" type="button" data-view="integrations"><span>⛓</span> Conexiones</button>
+      <button class="navitem" type="button" data-view="settings"><span>⚙</span> Datos y respaldo</button>
+    </nav>
+    <div class="side-bottom"><div class="online-indicator"><span></span> Área de preparación</div><small>Sin conexión a correos ni servidor.<br>Los datos permanecen en este navegador.</small></div>
+  </aside>
+  <div class="app-main">
+    <header class="topbar"><div class="top-left"><button type="button" class="mobile-menu" id="mobile-menu" aria-label="Abrir menú">☰</button><span class="breadcrumb">PRESTIGE / <b id="crumb">RESUMEN</b></span></div><div class="top-right"><span class="environment">QA · LOCAL</span><span class="avatar" aria-label="Espacio privado en preparación">PG</span></div></header>
+    <main class="workspace" id="workspace" tabindex="-1"><!-- renderizado por JavaScript --></main>
+  </div>
+</div>
+<dialog id="record-dialog" aria-labelledby="dialog-title"><form id="record-form"><div class="dialog-header"><div><p class="eyebrow">NUEVO REGISTRO</p><h2 id="dialog-title">Agregar</h2></div><button type="button" id="dialog-close" class="icon-button" aria-label="Cerrar">×</button></div><div class="form-fields" id="form-fields"></div><div class="dialog-actions"><button type="button" class="button light" id="cancel-dialog">Cancelar</button><button type="submit" class="button primary">Guardar registro</button></div></form></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
