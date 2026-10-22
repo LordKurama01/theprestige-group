@@ -91,3 +91,17 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - También se crearon AGENTS.md y BITACORA.md en el repositorio del perfil. GitHub confirmó el contenido, no la representación visual final.
 - No se alteró código de aplicaciones ni servicios. No se ejecutaron tests de software por tratarse de documentación.
 - Próximo paso: verificar visualmente el perfil y fijar tres repositorios públicos desde Customize your pins.
+
+
+## 2026-10-22 — Presentación institucional de The Prestige Group para contacto con ARBA
+
+- **Objetivo:** elaborar una presentación institucional general para responder a Gustavo Ponce (Gerencia General de Tecnología e Innovación de ARBA) desde correo corporativo y reutilizar en futuras oportunidades.
+- **Estado previo verificado:** rama main, último HEAD anterior a la intervención `02bf1c06937c22bb4098d041b201b5d1004aea3d`; revisados AGENTS.md, BITACORA.md, MARCA_THE_PRESTIGE_GROUP.md, README.md, web institucional y respuesta original de Gmail. La empresa tiene una web pública con servicios, casos y contacto. Se comprobó el correo recibido, no envío corporativo.
+- **Diagnóstico:** faltaba PDF institucional reutilizable, distinto de las propuestas individuales de productos. No correspondía afirmar contratos, certificaciones o integraciones gubernamentales no acreditados.
+- **Cambios:** PDF local de 7 páginas, A4 apaisado, con identidad, capacidades, proyectos, método, colaboración institucional y contacto; guion registrado en `docs/PRESENTACION_INSTITUCIONAL_2026-10-22.md` (commit documental `b097d36e0f111ad9b0d1743a5412c74a6b3f3f17`). El PDF se entrega como archivo de conversación; no se afirma que sus bytes estén en GitHub.
+- **Marca:** icono diamante de la familia gráfica oficial, recuperado de la copia PNG de 96×70 de un PDF comercial anterior; transparencia reconstruida eliminando el fondo negro. **No es el PNG canónico de 879×648 embebido**; queda por reemplazarlo con los bytes oficiales antes de reutilizaciones impresas de mayor escala. Firma inferior izquierda según estándar.
+- **Pruebas/resultado:** PDF de 7 páginas verificado con pypdf/pdfinfo, render de todas las páginas e inspección visual. Corregidos espaciado de caracteres, fondo negro de icono, subtítulo superpuesto y caja inferior de texto. Sin pruebas de software, CI, deploy o cambios de producción por tratarse de un artefacto documental.
+- **Rama/commits:** main; guion documental en `b097d36e0f111ad9b0d1743a5412c74a6b3f3f17`; este registro se guarda como cambio documental reversible. No se modificaron aplicaciones ni infraestructura.
+- **Estado:** PDF generado, no enviado; revisión/aprobación del titular pendiente antes de remitir a ARBA. El conector Gmail disponible corresponde a la cuenta personal y no demuestra permisos de envío desde Zoho.
+- **Riesgos:** la copia pequeña del símbolo no se debe ampliar; confirmar remitente corporativo, dirección y destinatario antes de envío; no confundir producto en desarrollo con caso implantado.
+- **Próximo paso exacto:** revisión del PDF, sustitución del símbolo por el PNG canónico si fuera posible y envío desde Zoho a `gustavo.ponce@arba.gov.ar` junto con una respuesta breve. Registrar fecha/hora del envío cuando esté verificado.
