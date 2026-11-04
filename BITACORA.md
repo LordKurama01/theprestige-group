@@ -118,3 +118,15 @@ Historial acumulativo del repositorio. Leer junto con AGENTS.md antes de interve
 - **Rama y registro:** main; bitácora actualizada con cambio documental reversible. Sin modificaciones a software, servicios, secretos o producción.
 - **Pendientes:** confirmar conformidad final del titular antes de remitir al organismo. El PDF no fue enviado por correo.
 - **Próximo paso exacto:** adjuntar el PDF institucional aprobado a mensaje corporativo desde Zoho a Gustavo Ponce de ARBA y verificar constancia real de envío.
+
+## 2026-11-04 — Propuesta Mayba: corrección de firma corporativa
+
+- **Objetivo:** corregir el tamaño del diamante en portada y el símbolo y la alineación de la firma en las 26 hojas de la propuesta industrial premium de Mayba, sin modificar el contenido funcional.
+- **Estado verificado:** repositorio de marca `LordKurama01/theprestige-group`, rama `main`, HEAD de referencia `3d58e57b1e717fc87d38498f4dc5e50d15f54d03`; leídos `AGENTS.md`, `MARCA_THE_PRESTIGE_GROUP.md` y bitácora; PDF fuente disponible como artefacto de conversación.
+- **Causa raíz:** la conversión anterior aplicaba transparencia según luminosidad a la copia pequeña y eliminaba los tonos oscuros internos del diamante. Además, el tamaño de portada era excesivo y varias posiciones verticales de pie diferían de sus textos.
+- **Marca canónica localizada:** `branding/tpg-diamondgold.png`, PNG RGBA 879 × 648 px, blob `049cec9ba22709ac8f261b3750ee6b3e6725f7af`, confirmado también en `tiendasvirtuales/prestige-diamond.png`. No se redibujó el icono.
+- **Intervención documental:** se recuperaron las facetas oscuras de la copia gráfica de 96 × 70 px previamente embebida, recortando solo su fondo mate exterior; se reemplazó el símbolo alterado, se achicó en portada, y se alineó con el texto de firma según cada pie, incluido fondo oscuro de la hoja 9. Archivo de conversación: `MAYBA_Propuesta_Industrial_Integral_PREMIUM_FIRMA_AJUSTADA_2026.pdf`.
+- **Limitación explícita:** el PDF corregido utiliza una restauración transparente de la copia pequeña ya incluida en el documento, **no incrusta aún los bytes PNG canónicos de 879 × 648 px**. No presentar esta versión como una incorporación exacta del archivo de alta resolución ni ampliar esa copia para impresiones grandes.
+- **QA:** 26/26 páginas, texto extraído idéntico al PDF previo, ubicación de la firma inspeccionada en portada y múltiples pies, contraste verificado sobre fondos claros y oscuros; no se alteraron módulos ni producción. Se conservaron imágenes y estructura originales.
+- **Cambios repositorio:** únicamente este registro documental en `BITACORA.md`; el archivo PDF permanece en la conversación, sin subir a GitHub. Sin secretos ni despliegue.
+- **Pendiente / próximo paso exacto:** para edición futura o imprenta de alta resolución, insertar directamente los bytes canónicos `tpg-diamondgold.png` y verificar su SHA-256 `3fdf5688660bd8b881c74f48b2ec2a8ec13bd65d84aabddf9e2352d2066a7011`; conservar medidas y alineaciones validadas. No enviar a Mayba sin indicación expresa.
